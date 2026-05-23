@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    animation: bg 5s ease-in-out infinite alternate;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: rgba(0, 81, 255, 0.6);
+    height: 90vh;
+    width: 80vw;
+    margin: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vmin;
+    box-shadow: 0 0 100px #000;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 3vmin;
+    gap: 4vmin;
+}
+
+input{
+    height: 5vh;
+    width: 30vw;
+    border: none;
+    outline: none;
+}
+
+@keyframes bg{
+    0%{
+        background: #ff0000;
+    }
+
+    20%{
+        background: #ff8800;
+    }
+
+    40%{
+        background: #ffee00;
+    }
+
+    60%{
+        background: #00cc66;
+    }
+
+    80%{
+        background: #0099ff;
+    }
+
+    100%{
+        background: #aa00ff;
+    }
+}

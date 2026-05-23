@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        A nice website
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="form">
+        <label for="wish">
+            What is your greatest wish which you want to come true?
+            <input type="text" id="wish" name="wish">
+        </label>
+    </form>
+
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -24,40 +25,22 @@ form{
     align-items: center;
 }
 
+#one, #middle, #last{
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+}
+
 #div {
     text-align: center;
     height: 90vh;
     width: 90vw;
-    background-color: #d01313;
+    animation: bg 5s ease-in-out infinite;
     border-radius: 5vmin;
-}
-
-#a, #b, #c, #d, #e, #f{
-    height: 5vw;
-    background-color: #fff;
-    width: 5vw;
-    border-radius: 50%;
-    position: fixed;
-    top: 13.5vh;
-    left: 50vw;
-}
-
-#a{
-    left: 6vw;
-    top: 13.5vh;
-    background-color: rgb(255, 0, 0);
-}
-
-#b{
-    left: 10vw;
-    top: 13.5vh;
-    background-color: rgb(0, 0, 255);
-}
-
-#c{
-    left: 8vw;
-    top: 11.5vh;
-    background-color: rgb(0, 255, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
 }
 
 #div :nth-child(1){
@@ -70,10 +53,55 @@ form{
 
 #test{
     background-color: #fff;
-    height: 15vh;
-    width: 15vh;
+    height: 15vw;
+    width: 15vw;
     border-radius: 50%;
     animation: jump 2s ease-in-out infinite;
+}
+
+#para{
+    font-size: 3vmin;
+    padding: 5vmin;
+    text-align: left;
+    text-wrap: inherit;
+    font-weight: bold;
+}
+
+img{
+    height: 40vh;
+    border-radius: 5vmin;
+    width: 50vw;
+}
+
+#reset{
+    padding: 1vmin 2vmin;
+    font-size: 3vmin;
+    font-weight: bold;
+    border-radius: 5vh;
+    text-align: center;
+    border: 0 solid transparent;
+    transition: 0.2s all ease-in-out;
+    background-color: aqua;
+}
+
+#reset:hover{
+    border: 0.5vmin solid aqua;
+    box-shadow: 0 0 15px aqua;
+    background-color: transparent;
+    transform: translateY(-0.5vmin);
+    color: white;
+}
+
+@keyframes bg{
+    0%{
+        background: #ff0000;
+    }
+    50%{
+        background: #ffa600;
+    }
+    100%{
+        background-color: #ff0000;
+    }
 }
 
 @keyframes jump{
