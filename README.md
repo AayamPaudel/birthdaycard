@@ -1,7 +1,7 @@
 # birthdaycard
 This is a birthday card template which wishes the user by their name after entering it. 
 
-This section receives the name entered
+This section receives and displays the name entered
 ```javascript
 
 form.addEventListener("submit", function(event){
