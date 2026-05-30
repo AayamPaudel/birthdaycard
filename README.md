@@ -17,3 +17,4 @@ form.addEventListener("submit", function(event){
     middleinput.value = ""
     lastinput.value = ""
 })
+```
