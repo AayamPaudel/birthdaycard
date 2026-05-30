@@ -18,3 +18,10 @@ form.addEventListener("submit", function(event){
     lastinput.value = ""
 })
 ```
+This code lets you reenter your name without reloading the page
+```javascript
+function reset(){
+    div.style.display = "none"
+    form.style.display = "flex"
+}
+```
